@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"
+        <title>갑자기 추워짐</title>
+    </head>
+    <body>
+        <h1>개인정보 털기</h1>
+        <form name="myform" enctype="multipart/form-data" method="post">
+            아이디: <input type="text" name="myid" placeholder="입력해라" required><br>
+            비밀번호: <input type="password" name="mypassword"><br>
+            전화번호: <input type="tel" name="mytel" placeholder="폰으로 보면 숫자 키패드"><br>
+            1~10까지 좋아하는 숫자: <input type="number" name="mynumber" min="1" max="10" value="1"><br>
+            좋아하는 주소(?): <input type="url" name="myurl" placeholder="http 필요"><br> 
+            검색창: <input type="search" name="mysearch" placeholder="입력하면 오른쪽에 X 뜸 ->"><br>
+            이메일: <input type="email" name="myemail"><br>
+            <fieldset width="100px">
+                <legend>키우고 싶은 동물을 모두 선택하세요.</legend>
+                <input type="checkbox" name="myanimal1" value="dog">개
+                <input type="checkbox" name="myanimal2" value="cat">고양이
+                <input type="checkbox" name="myanimal3" value="rabbit">토끼
+                <input type="checkbox" name="myanimal4" value="hamster">햄스터<br>
+                <input type="checkbox" name="myanimal5" value="turtle">뱀
+                <input type="checkbox" name="myanimal6" value="snake">닭
+                <input type="checkbox" name="myanimal7" value="fish">원숭이
+                <input type="checkbox" name="myanimal8" value="bird">앵무새<br>
+                <input type="checkbox" name="myanimal9" value="pig">여우
+                <input type="checkbox" name="myanimal10" value="horse">말
+                <input type="checkbox" name="myanimal11" value="cow">카피바라
+                <input type="checkbox" name="myanimal12" value="monkey">미어캣<br>
+            </fieldset>
+            성별: <input type="radio" name="mygender" value="man">남성
+            <input type="radio" name="mygender" value="woman">여성<br>
+            좋아하는 파일(?): <input type="file" name="myfile"><br>
+            심심하면 눌러보삼: <input type="button" name="mybutton" value="의문의 버튼"> <!--아무 기능 없음 ㅋ--><br>
+            <input type="hidden" name="myhidden1" value="이 기능은 뭐야1"><br>
+            라임이 사진 누르면 맨위로 감. 이유는 모름.: <br>
+            <input type="image" name="myimage" src="../Images/ichigo.jpg" width="210" height="280"><br>
+            <input type="hidden" name="myhidden2" value="이 기능은 뭐야2"><br>
+            생년월일: <input type="date" name="mybirth"><br>
+            좋아하는 시각: <input type="time" name="mytime"><br>
+            오늘의 기분을 점수로 표현하면?: <input type="range" name="myrange" value="50" min="0" max="100" step="10"><br>
+            좋아하는 색깔은? <input type="color" name="mycolor"><br>
+            <textarea name="mytextarea" cols="40" rows="5" maxlength="100">여기엔 좋아하는 것을 모두 적기</textarea><br>
+            사는 곳과 가장 가까운 역은? <select name="myselect">
+                <option value="ss" selected disabled>--선택하세요--</option>
+                <optgroup label="인천1호선">
+                    <option value="GeodanLakePark">검단호수공원역</option>
+                    <option value="Singeomdanjungang">신검단중앙역</option>
+                    <option value="Ara">아라역</option>
+                    <option value="Gyeyang">계양역</option>
+                    <option value="Gyulhyeon">귤현역</option>
+                    <option value="Bakchon">박촌역</option>
+                </optgroup>
+                <optgroup label="인천2호선">
+                    <option value="GeomdanOryu">검단오류역</option>
+                    <option value="Wanggil">왕길역</option>
+                    <option value="Geomdansageori">검단사거리역</option>
+                    <option value="Majeon">마전역</option>
+                    <option value="Wanjeong">완정역</option>
+                    <option value="Dokjeong">독정역</option>
+                </optgroup>
+            </select><br>
+            week04 복습 진행률: <progress value="95" max="100" name="myprogress"></progress><br>
+            지금 폰 배터리 잔량: <meter name="mymeter" value="75" min="0" max="100" low="20" high="100"></meter><br>
+            <input type="hidden" name="myhidden3" value="이 기능은 뭐야3"><br>
+            제출 버튼: <input type="submit" value="제출"><br>
+            초기화 버튼: <input type="reset" value="초기화">
+        </form>
+    </body>
+</html>
