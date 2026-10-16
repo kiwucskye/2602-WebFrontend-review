@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>졸려뒤지겠네</title>
+        <style>
+            p {
+                color: red;
+            }
+            p {
+                color: blue;
+            }
+            p { 
+                color: gray;
+            }
+            .div01 {
+                background-color: pink;
+            }
+            .p01 {
+                color:blueviolet;
+            }
+            .div02 {
+                color: maroon;
+            }
+            .div03 p {
+                color: blue;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div01">
+            <p> 오늘은 파바 초코쫀득츄러스를 먹었다.</p>
+            <p class="p01"> 오늘은 썹웨 30cm를 배달시켰다. 6천원 할인 개꿀 아님?</p>
+            <p> 오늘은 타코야끼도 먹었다.</p>
+            <p> 놀랍게도 <span>하루에</span> 다 먹은 게 맞다.</p>
+        </div>
+        <div class="div02">
+            <h4>핑크 배경에서 사실 p태그를 여러 번 꾸몄는데 위에서부터 차례로 실행되면서 마지막인 회색에 멈춤.<br>
+            그런데 왜 썹웨 문장만 보라색일까... 왜냐면 내가 class 달아놨음. class가 우선 순위 높음.</h4><br>
+            그리고 바로 윗문장은 내가 div02 글자색을 maroon으로 지정했을 뿐인데 상속되어서 h4태그도 marron색으로 보임. 
+        </div>
+        <div class="div03">
+            <p> ㅜㅜ 에이쁠 주세용 </p>
+        </div>
+</html>
