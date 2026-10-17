@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>알바하고옴</title>
+        <style>
+            th, td {
+                border: 2px solid black;
+                width: 120px;
+            }
+            th {
+                background-color: pink;
+            }
+            .last {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="myform">
+        <table class="mytable">
+            <tr>
+                <th>사용자 ID</th><td colspan="3"><input type="text" name="myid" placeholder="제대로 써라잉"> <input type="button" value="ID 중복확인"></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th><td><input type="password" name="mypassword01"></td><th>비밀번호 확인</th><td><input type="password" name="mypassword02"></td>
+            </tr>
+            <tr>
+                <th>사용자 이름</th><td colspan="3"><input type="text" name="myname"></td>
+            </tr>
+            <tr>
+                <th>주민등록번호</th><td colspan="3"><input type="text" name="mynum01"> - <input type="text" name="num02"></td>
+            </tr>
+            <th>생년월일</th><td><input type="text" name="mybirth"></td>
+            <th>성별</th><td><input type="radio" name="myradio" value="man">남자 <input type="radio" name="myradio" value="woman">여자</td>
+            <tr>
+            <th>우편번호</th><td colspan="3"><input type="text" name="mynum02"> - <input type="text" name="mynum03"> <input type="button" value="우편번호검색"></td>
+            </tr>
+            <tr>
+                <th>주소</th><td colspan="3"><input type="text" name="myaddr01" size=60px></td>
+            </tr>
+            <tr>
+            <th>나머지주소</th><td colspan="3"><input type="text" name="myaddr02" size=30px></td>
+            </tr>
+            <tr>
+                <th>E-Mail</th><td colspan="3"><input type="text" name="mymail01">@
+                <select><option selected disabled>선택하세요</option><option>gmail.com</option><option>naver.com</option><option>hanmail.net</option></select></td>
+            </tr>
+            <tr>
+                <th>직업</th><td colspan="3"><select><option>아이돌</option><option>의사</option><option>화가</option><option>변호사</option></select></td>
+            </tr>
+            <tr>
+            <td colspan="4" class="last"><input type="submit" value="등록"> <input type="reset" value="취소"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
