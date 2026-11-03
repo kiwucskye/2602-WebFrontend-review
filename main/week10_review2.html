@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>복습</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "맑은 고딕";
+                font-size: 0;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+            }
+            .red-box {
+                    background-color: red;
+                    position: absolute;
+                    top: 0;
+                    z-index: 3;
+                }
+            .green-box {
+                background-color: green;
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                z-index: 2;
+            }
+            .blue-box {
+                background-color: blue;
+                position: absolute;
+                top: 160px;
+                left: 40px;
+                z-index: 1;
+            }
+            .yellow-box {
+                background-color: yellow;
+                position: relative;
+                top: 300px;
+            }
+            .pink-box {
+                background-color: pink;
+                position: relative;
+                top: 300px;
+                float: left;
+            }
+            .indigo-box {
+                background-color: indigo;
+                position: relative;
+                top: 300px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box red-box"></div>
+        <div class="box green-box"></div>
+        <div class="box blue-box"></div>
+        <div class="box yellow-box"></div>
+        <div class="box pink-box"></div>
+        <div class="box indigo-box"></div>
+    </body>
+</html>
